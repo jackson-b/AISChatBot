@@ -5,7 +5,7 @@ struct QuestionAnswerer {
         
       
         if lowerQuestion.hasPrefix("where") && lowerQuestion.contains("science") && lowerQuestion.contains("olympiad") {
-            return "Every year Science Olympiad is at a random school near atlanta Georgia, the meets for this cass group take place at Atlanta International School."
+            return "Every year Science Olympiad is at a random school near Atlanta Georgia, the meets for this CAS group take place at Atlanta International School."
             
         } else if lowerQuestion.hasPrefix("what") && lowerQuestion.contains("science") && lowerQuestion.contains("is") && lowerQuestion.contains("olympiad") {
             return "Science Olympiad is an organization that brings multiple schools together every year. These schools each compete in a number of scientific events and overcome challenges to earn medals and recognition. Each event requires specific knowledge and skills to succeed."
