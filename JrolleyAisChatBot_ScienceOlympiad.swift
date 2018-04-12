@@ -3,6 +3,7 @@ struct QuestionAnswerer {
     func responseTo(question: String) -> String {
         let lowerQuestion = question.lowercased()
         
+        // personal responses? not a huge problem but could cause issues in the future with the chatbot contradicting itself. How should this work?
       
         if lowerQuestion.hasPrefix("where") && lowerQuestion.contains("science") && lowerQuestion.contains("olympiad") {
             return "Every year Science Olympiad is at a random school near Atlanta, Georgia, the meets for this CAS group take place at Atlanta International School."
@@ -34,8 +35,10 @@ struct QuestionAnswerer {
         } else if lowerQuestion.hasPrefix("what") && lowerQuestion.contains("event") && lowerQuestion.contains("favorite") {
             return "It’s hard to choose the best event because of all the events are fun but my personal favorite is towers. The goal of this event is to build a light wood tower that is 50 cm high. You then see how much weight it can hold by putting a block on the to of the tower attached to a chain that goes down the middle of the tower. Next the chain is attached to a bucket and sand is poured in until the tower breaks. You still need to be careful because the score is measured by how much the tower can hold divided by the weight of the tower. This means the lighter your tower the better the score."
             
+            // personal responses (see above)
+            
         } else if lowerQuestion.hasPrefix("how") && lowerQuestion.contains("join") && lowerQuestion.contains("do") || lowerQuestion.hasPrefix("how") && lowerQuestion.contains("join") && lowerQuestion.contains("can") {
-            return "At the beginning of the year, there is a club fair. In which you can sign up for your favorite clubs."
+            return "At the beginning of the year, there is a club fair in which you can sign up for your favorite clubs."
             
         } else if lowerQuestion.hasPrefix("how") && lowerQuestion.contains("win") && lowerQuestion.contains("do") && lowerQuestion.contains("science") || lowerQuestion.hasPrefix("how") && lowerQuestion.contains("win") && lowerQuestion.contains("can") && lowerQuestion.contains("science"){
             return "In order to win a medal, you need to win or place within the top 4 schools in an event. Even if you don’t, you still get a ribbon."
@@ -55,11 +58,15 @@ struct QuestionAnswerer {
         } else if lowerQuestion.hasPrefix("what") && lowerQuestion.contains("easiest") && lowerQuestion.contains("event") {
             return "I would say Fast Facts, because it requires no studying. It is just a bunch of questions about science in general."
             
+            // personal responses (see above)
+            
         } else if lowerQuestion.hasPrefix("how") && lowerQuestion.contains("can") && lowerQuestion.contains("prepare") && lowerQuestion.contains("science")  {
             return "Have a liking to science and reading on the Science Olympiad website will help you prepare for this. On the website read the 27 events and the basic description and figure out what you want to do. Finally thoroughly read through the 3-5 events you like to learn more about how they work and the parameters that they require."
             
         } else if lowerQuestion.hasPrefix("what") && lowerQuestion.contains("can") && lowerQuestion.contains("i") && lowerQuestion.contains("expect")  {
             return "When in science olympiad I would say you can expect to have a fun time along with a challenging road. You can expect to have 3 events to work on throughout the year and a partner to help you along the way."
+            
+            // personal responses (see above)
             
         } else if lowerQuestion.hasPrefix("which") && lowerQuestion.contains("grades") && lowerQuestion.contains("join") && lowerQuestion.contains("science")  {
             return "There is a High School team, and a Middle School team of Science Olympiad. That means grades 6-12 can join. The High School team has a bit more events, but more strict rules."
