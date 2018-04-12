@@ -71,6 +71,7 @@ struct QuestionAnswerer {
         } else if lowerQuestion.hasPrefix("which") && lowerQuestion.contains("grades") && lowerQuestion.contains("join") && lowerQuestion.contains("science")  {
             return "There is a High School team, and a Middle School team of Science Olympiad. That means grades 6-12 can join. The High School team has a bit more events, but more strict rules."
             
+            // this applies to several questions,i would refrain from using .hasPrefix, in case the user asks a question such as "and so which..." etc.
         } else if lowerQuestion.hasPrefix("what") && lowerQuestion.contains("after") && lowerQuestion.contains("olympiad") && lowerQuestion.contains("science")  {
             return "Our school either goes on to the next round, or we don’t. But either way, we get a pizza party. Woohoo!"
             
